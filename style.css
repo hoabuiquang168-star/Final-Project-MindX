@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column; /* xếp chồng menu rồi nội dung */
+    align-items: center; /* bắt đầu từ trên/ trái, không căn giữa */
+    justify-content: flex-start;
+    min-height: 100vh; /* đảm bảo trang có ít nhất chiều cao màn hình */
+    padding-top: 16px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.logo-img {
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
