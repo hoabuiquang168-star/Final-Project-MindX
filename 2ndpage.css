@@ -1,0 +1,335 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  color: #111;
+}
+
+
+
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.teach a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.searchbar {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.searchbar input {
+    width: 100%;
+    padding: 8px 10px 8px 35px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.searchbar img {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+}
+
+
+header>div p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth img {
+    height: 24px;
+}
+
+.auth a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.auth a.signup {
+    background: #0073e6;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+
+.box {
+    flex: 1 1 0;
+    min-width: 350px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    font-size: 3rem;
+    color: #2563eb;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.text {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.user p {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/*
+@media (max-width: 900px) {
+    .box {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        min-width: 260px;
+        padding: 16px;
+    }
+}
+*/
+
+
+.instructor-section {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.instructor-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.instructor-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.instructor-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 40px 60px;
+    gap: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+
+.instructor-card.reverse {
+    flex-direction: row;
+}
+
+
+.image-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef2ff;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.image-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.instructor-card .text {
+    flex: 1;
+}
+
+.instructor-card h3 {
+    font-size: 1.75rem;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.instructor-card p {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    background: #1e40af;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #1e3a8a;
+}
+
+/*
+@media (max-width: 900px) {
+    .instructor-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .instructor-card.reverse {
+        flex-direction: column;
+    }
+
+    .image-wrap {
+        width: 100%;
+    }
+
+    .instructor-card .text {
+        width: 100%;
+    }
+
+    .instructor-card h3 {
+        font-size: 1.5rem;
+    }
+}
+*/
