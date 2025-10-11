@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.search-container {
+    flex: 1;
+    max-width: 662px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex: 1;
+    min-width: 0;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container .search {
+    width: 20px;
+    height: 20px;
+}
+
+.slogan p {
+    margin: 0;
+}
+
+.sign-in-hidden {
+    gap: 20px;
+}
+
+.sign-in-hidden img {
+    width: 24px;
+    height: 24px;
+}
+
+.get-started-button,
+.sign-in-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.get-started-button {
+    background: none;
+    border: 1px solid #ddd;
+}
+
+.sign-in-button {
+    background: rgba(51, 65, 85, 1);
+    color: white;
+    border: none;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+
+.left-content,
+.right-content {
+    flex: 1 1 0;
+}
+
+.left-content img.background {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.signup-form {
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.signup-form h1 {
+    margin-bottom: 8px;
+}
+
+.signup-form p {
+    margin-bottom: 16px;
+    color: #666;
+}
+
+.signup-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 12px;
+}
+
+.signup-form label {
+    grid-column: 1 / -1;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.signup-form input.full {
+    grid-column: 1 / -1;
+}
+
+
+.signup-form input:not(.full) {
+
+    grid-column: auto;
+}
+
+
+.signup-form input[type="password"] {
+
+    padding: 10px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.signup-form .Create-button {
+    grid-column: 1 / -1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-form .terms,
+.signup-form .existing-account {
+    grid-column: 1 / -1;
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .signup-form form { 
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .menu {
+        gap: 12px;
+        padding: 8px 12px;
+    }
+    .logo-img img { height: 36px; }
+    .search-container { max-width: 480px; margin: 0 12px; }
+    .signup-form { padding: 20px; }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .logo-img { justify-content: flex-start; }
+    .slogan { display: none; }
+    .search-container { max-width: 100%; margin: 0 8px; }
+    .sign-in-hidden { justify-content: flex-end; gap: 12px; }
+    .left-content { display: none; }
+    .signup-form { width: calc(100% - 32px); margin: 0 16px; padding: 16px; }
+    .homepage-container { padding: 12px; }
+}

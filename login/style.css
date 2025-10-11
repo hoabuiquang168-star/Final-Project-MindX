@@ -6,11 +6,10 @@
 
 .homepage-container {
     display: flex;
-    flex-direction: column; /* xếp chồng menu rồi nội dung */
-    align-items: center; /* bắt đầu từ trên/ trái, không căn giữa */
-    justify-content: flex-start;
-    min-height: 100vh; /* đảm bảo trang có ít nhất chiều cao màn hình */
-    padding-top: 16px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .menu {
@@ -21,15 +20,227 @@
     max-width: 1600px;
 }
 
-.logo-img {
-    width: 120px;
-    height: 40px;
-    margin-left: 20px;
-}
-
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 25px;
+    gap: 15px;
+}
+
+
+
+.search-container {
+    flex: 1;
+    max-width: 662px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex: 1;
+    min-width: 0;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container .search {
+    width: 20px;
+    height: 20px;
+}
+
+.slogan p {
+    margin: 0;
+}
+
+.sign-in-hidden {
+    gap: 20px;
+}
+
+.sign-in-hidden img {
+    width: 24px;
+    height: 24px;
+}
+
+.get-started-button,
+.sign-in-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.get-started-button {
+    background: none;
+    border: 1px solid #ddd;
+}
+
+.sign-in-button {
+    background: rgba(51, 65, 85, 1);
+    color: white;
+    border: none;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+
+.left-content,
+.right-content {
+    flex: 1 1 0;
+}
+
+.left-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    max-width: 760px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.left-content h1 {
+    font-size: 42px;
+    line-height: 1.04;
+    color: #111827;
+
+    margin: 0 0 8px 0;
+}
+
+.left-content label {
+    font-size: 16px;
+    color: #374151;
+    margin-top: 10px;
+    display: block;
+}
+
+.left-content input.full {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-top: 6px;
+}
+
+.left-content .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+    font-size: 15px;
+    color: #374151;
+}
+
+.left-content .login-button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+
+}
+
+.left-content .forgot-password {
+    text-align: right;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 16px;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .left-content h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .left-content .hero-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .left-content input.full {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .left-content .login-button {
+        font-size: 15px;
+        padding: 11px 14px;
+    }
+
+    .left-content .hero-desc {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .right-content .hero-image {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-content .hero-title {
+        font-size: 22px;
+    }
+
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
