@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+     <header class="header">
+
+    <a href="#" class="logo"> <img src="customerimg/logo.png" alt="logo">Byway</a>
+    <nav class="nav">
+      <a href="#">Categories</a>
+    </nav>
+    <div class="searchbar">
+      <input type="text" placeholder="Search Courses">
+      <img src="customerimg/heroicons_magnifying-glass-20-solid.png" alt="glass">
+    </div>
+    <div class="teach">
+      <a href="#"> Teach on Byway </a>
+    </div>
+    <div class="auth">
+      <a href="#" id="cart"><img src="customerimg/Frame 427318762.png" alt="cart"> </a>
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Sign Up</a>
+    </div>
+  </header>
+    <div class="top">
+        <h1>Customer Inquiry</h1>
+        <h2> Please fill out the following information for customer Inquiry</h2>
+    </div>
+    <main>
+        <div id="customer">
+            <a for="fname">First Name:</a><br>
+            <input type="text" id="fname" name="fname"><br>
+            <a for="lname">Last Name:</a><br>
+            <input type="text" id="lname" name="lname"><br>
+            <a for="email">Email:</a><br>
+            <input type="email" id="email" name="email"><br>
+            <a for="phone">Phone Number:</a><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <a for="inquiry">Inquiry Type:</a><br>
+            <select id="inquiry" name="inquiry">
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br>
+            <a for="message">Message:</a><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </div>
+    </main>
+</body>
+</html>
