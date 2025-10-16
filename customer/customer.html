@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="customer.css">
-</head>
-<body>
-     <header class="header">
 
-    <a href="#" class="logo"> <img src="customerimg/logo.png" alt="logo">Byway</a>
-    <nav class="nav">
-      <a href="#">Categories</a>
-    </nav>
-    <div class="searchbar">
-      <input type="text" placeholder="Search Courses">
-      <img src="customerimg/heroicons_magnifying-glass-20-solid.png" alt="glass">
-    </div>
-    <div class="teach">
-      <a href="#"> Teach on Byway </a>
-    </div>
-    <div class="auth">
-      <a href="#" id="cart"><img src="customerimg/Frame 427318762.png" alt="cart"> </a>
-      <a href="#" class="login">Login</a>
-      <a href="#" class="signup">Sign Up</a>
-    </div>
-  </header>
-    <div class="top">
-        <h1>Customer Inquiry</h1>
-        <h2> Please fill out the following information for customer Inquiry</h2>
-    </div>
-    <main>
-        <div id="customer">
-            <a for="fname">First Name:</a><br>
-            <input type="text" id="fname" name="fname"><br>
-            <a for="lname">Last Name:</a><br>
-            <input type="text" id="lname" name="lname"><br>
-            <a for="email">Email:</a><br>
-            <input type="email" id="email" name="email"><br>
-            <a for="phone">Phone Number:</a><br>
-            <input type="tel" id="phone" name="phone"><br>
-            <a for="inquiry">Inquiry Type:</a><br>
-            <select id="inquiry" name="inquiry">
-                <option value="general">General Inquiry</option>
-                <option value="support">Support</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select><br>
-            <a for="message">Message:</a><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-            <input type="submit" value="Submit">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="customer.css">
+</head>
+
+<body>
+  <div class="homepage-container">
+    <div class="menu">
+      <div class="logo-img flex">
+        <img src="customerimg/Byway-logo.png" alt="logo">
+        <a href="#">Categories</a>
+      </div>
+      <div class="search-container flex">
+        <div class="search-container flex">
+          <input type="text" placeholder="Search courses" id="searchInput">
+          <button type="button" id="searchBtn">
+            <img src="customerimg/search-icon.png" alt="search" class="search">
+          </button>
+          <div class="dropdown" id="dropdown"></div>
         </div>
-    </main>
+      </div>
+      <div class="slogan flex">
+        <p>Teach on Byway</p>
+      </div>
+      <div class="sign-in-hidden flex">
+        <a href="#"><img src="customerimg/heart-icon.png" alt="heart-icon"></a>
+        <a href="#"><img src="customerimg/shoppingcart-icon.png" alt="shoppingcart"></a>
+        <a href="#"><img src="customerimg/bell-icon.png" alt="bell-icon"></a>
+        <a href="#"><img src="customerimg/avatar.png" alt="avatar"></a>
+      </div>
+    </div>
+    <div class="course-list" id="courseList"></div>
+  </div>
+
+  <div class="top">
+    <h1>Customer Inquiry</h1>
+    <h2> Please fill out the following information for customer Inquiry</h2>
+  </div>
+  <main>
+    <div id="customer">
+      <a for="fname">First Name:</a><br>
+      <input type="text" id="fname" name="fname"><br>
+      <a for="lname">Last Name:</a><br>
+      <input type="text" id="lname" name="lname"><br>
+      <a for="email">Email:</a><br>
+      <input type="email" id="email" name="email"><br>
+      <a for="phone">Phone Number:</a><br>
+      <input type="tel" id="phone" name="phone"><br>
+      <a for="inquiry">Inquiry Type:</a><br>
+      <select id="inquiry" name="inquiry">
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select><br>
+      <a for="message">Message:</a><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Submit">
+    </div>
+  </main>
+  <script src="script.js" defer></script>
 </body>
+
 </html>

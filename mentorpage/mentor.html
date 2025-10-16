@@ -9,24 +9,33 @@
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="logo"> <img src="mentorimg/logo.png" alt="logo">Byway</a>
-    <nav class="nav">
-      <a href="#">Categories</a>
-    </nav>
-    <div class="searchbar">
-      <input type="text" placeholder="Search Courses">
-      <img src="mentorimg/heroicons_magnifying-glass-20-solid.png" alt="glass">
+ <div class="homepage-container">
+        <div class="menu">
+            <div class="logo-img flex">
+                <img src="mentorimg/Byway-logo.png" alt="logo">
+                <a href="#">Categories</a>
+            </div>
+            <div class="search-container flex">
+                <div class="search-container flex">
+                    <input type="text" placeholder="Search courses" id="searchInput">
+                    <button type="button" id="searchBtn">
+                        <img src="mentorimg/search-icon.png" alt="search" class="search">
+                    </button>
+                    <div class="dropdown" id="dropdown"></div>
+                </div>
+            </div>
+            <div class="slogan flex">
+                <p>Teach on Byway</p>
+            </div>
+            <div class="sign-in-hidden flex">
+                <a href="#"><img src="mentorimg/heart-icon.png" alt="heart-icon"></a>
+                <a href="#"><img src="mentorimg/shoppingcart-icon.png" alt="shoppingcart"></a>
+                <a href="#"><img src="mentorimg/bell-icon.png" alt="bell-icon"></a>
+                <a href="#"><img src="mentorimg/avatar.png" alt="avatar"></a>
+            </div>
+        </div>
+        <div class="course-list" id="courseList"></div>
     </div>
-    <div class="teach">
-      <a href="#"> Teach on Byway </a>
-    </div>
-    <div class="auth">
-      <a href="#" id="cart"><img src="mentorimg/Frame 427318762.png" alt="cart"> </a>
-      <a href="#" class="login">Login</a>
-      <a href="#" class="signup">Sign Up</a>
-    </div>
-  </header>
 
   <main class="instructor-page">
     <section class="instructor-info">
@@ -85,7 +94,6 @@
   </main>
   <section class="reviews-section">
   <div class="reviews-container">
-    <!-- Left Summary Panel -->
     <aside class="reviews-summary">
       <h2>Learner Reviews</h2>
       <div class="rating-score">
@@ -226,6 +234,6 @@
     </div>
   </div>
 </section>
-
+<script src="script.js" defer></script>
 </body>
 </html>
