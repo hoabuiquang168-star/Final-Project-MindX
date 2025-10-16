@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 0;         
+  min-width: 320px;
+
+}
+
+.search-container input {
+   flex: 1 1 auto;
+  min-width: 0;        
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd
+}
+
+.search-container button {
+flex: 0 0 auto;
+  background: none;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 6px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container .search {
+    width: 20px;
+    height: 20px;
+}
+
+.slogan p {
+    margin: 0;
+}
+
+.logo-img,
+.slogan,
+.sign-in-hidden {
+   display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;      
+  min-width: 0;        
+  flex-shrink: 0;     
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.checkout-left, .checkout-right {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.checkout-left {
+  flex: 2;
+}
+
+.checkout-right {
+  flex: 1;
+  border: 1px solid #ddd;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-method {
+  margin: 10px 0;
+}
+
+.coupon {
+  display: flex;
+  gap: 10px;
+}
+
+.price-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.checkout-btn {
+  background: #0073e6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #005bb5;
+}

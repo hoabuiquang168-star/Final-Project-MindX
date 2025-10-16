@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="homepage-container">
+        <div class="menu">
+            <div class="logo-img flex">
+                <img src="./Byway-logo.png" alt="logo">
+                <a href="#">Categories</a>
+            </div>
+            <div class="search-container flex">
+                <input type="text" placeholder="Search courses" class="text">
+                <button type="submit"><img src="./search-icon.png" alt="search" class="search"></button>
+            </div>
+            <div class="slogan flex">
+                <p>Teach on Byway</p>
+            </div>
+            <div class="sign-in-hidden flex">
+                <a href="#"><img src="./heart-icon.png" alt="heart-icon"></a>
+                <a href="#"><img src="./shoppingcart-icon.png" alt="shoppingcart"></a>
+                <a href="#"><img src="./bell-icon.png" alt="bell-icon"></a>
+                <a href="#"><img src="./avatar.png" alt="avatar"></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- Bên trái: Billing + Payment -->
+            <div class="checkout-left">
+                <h2>Billing Information</h2>
+                <div class="form">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option>Vietnam</option>
+                        <option>USA</option>
+                        <option>Japan</option>
+                    </select>
+
+                    <label for="state">State/Union Territory</label>
+                    <input type="text" id="state" name="state">
+
+                    <h3>Payment Method</h3>
+                    <div class="payment-method">
+                        <input type="radio" id="card" name="payment" checked>
+                        <label for="card">Credit/Debit Card</label>
+                    </div>
+
+                    <div class="card-info">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name">
+
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number">
+
+                        <div class="card-row">
+                            <div>
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" placeholder="MM/YY">
+                            </div>
+                            <div>
+                                <label for="cvc">CVC/CVV</label>
+                                <input type="text" id="cvc">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-method">
+                        <input type="radio" id="paypal" name="payment">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bên phải: Order Summary -->
+            <div class="checkout-right">
+                <h2>Order Summary</h2>
+                <div class="course-info">
+                    <p><strong>Introduction to User Experience Design</strong></p>
+                    <p>155 lectures • 22 hours</p>
+                </div>
+
+                <div class="coupon">
+                    <input type="text" placeholder="Apply Coupon Code">
+                    <button>Apply</button>
+                </div>
+
+                <div class="price-details">
+                    <p>Price: <span>$300.00</span></p>
+                    <p>Discount: <span>-$10.00</span></p>
+                    <p>Tax: <span>$0.00</span></p>
+                    <hr>
+                    <p class="total">Total: <span>$290.00</span></p>
+                </div>
+
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
