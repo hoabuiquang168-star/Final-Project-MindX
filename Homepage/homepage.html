@@ -8,26 +8,33 @@
   <link rel="stylesheet" href="Homepage.css">
 </head>
 <body>
-  <header class="header">
-
-    <a href="#" class="logo"> <img src="homepageimg/logo.png" alt="logo">Byway</a>
-    <nav class="nav">
-      <a href="#">Categories</a>
-    </nav>
-    <div class="searchbar">
-      <input type="text" placeholder="Search Courses">
-      <img src="homepageimg/heroicons_magnifying-glass-20-solid.png" alt="glass">
+   <div class="homepage-container">
+        <div class="menu">
+            <div class="logo-img flex">
+                <img src="homepageimg/Byway-logo.png" alt="logo">
+                <a href="#">Categories</a>
+            </div>
+            <div class="search-container flex">
+                <div class="search-container flex">
+                    <input type="text" placeholder="Search courses" id="searchInput">
+                    <button type="button" id="searchBtn">
+                        <img src="homepageimg/search-icon.png" alt="search" class="search">
+                    </button>
+                    <div class="dropdown" id="dropdown"></div>
+                </div>
+            </div>
+            <div class="slogan flex">
+                <p>Teach on Byway</p>
+            </div>
+            <div class="sign-in-hidden flex">
+                <a href="#"><img src="homepageimg/heart-icon.png" alt="heart-icon"></a>
+                <a href="#"><img src="homepageimg/shoppingcart-icon.png" alt="shoppingcart"></a>
+                <a href="#"><img src="homepageimg/bell-icon.png" alt="bell-icon"></a>
+                <a href="#"><img src="homepageimg/avatar.png" alt="avatar"></a>
+            </div>
+        </div>
+        <div class="course-list" id="courseList"></div>
     </div>
-    <div class="teach">
-      <a href="#"> Teach on Byway </a>
-    </div>
-    <div class="auth">
-      <a href="#" id="cart"><img src="homepageimg/Frame 427318762.png" alt="cart"> </a>
-      <a href="#" class="login">Login</a>
-      <a href="../login/index.html" class="signup">Sign Up</a>
-    </div>
-  </header>
-
 
   <section class="hero">
     <div class="hero-text">
@@ -245,6 +252,7 @@
       </div>
     </div>
   </section>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
