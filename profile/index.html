@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div class="profile-container">
+ 
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img src="homepageimg/Ellipse 53.png" alt="Profile Picture" class="profile-photo">
+        <h2>John Doe</h2>
+        <button class="share-btn">
+          <img src="homepageimg/Icon.png" alt="share">
+          Share Profile
+        </button>
+      </div>
+
+      <nav class="menu">
+        <a href="#" class="active">Profile</a>
+        <a href="#">My Courses</a>
+        <a href="#">Teachers</a>
+        <a href="#">Messages</a>
+        <a href="#">My Reviews</a>
+      </nav>
+    </aside>
+
+  
+    <main class="profile-main">
+      <section class="account-info">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Headline</label>
+          <input type="text" placeholder="UX/UI Designer, Developer, Teacher">
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea placeholder="Write a short bio about yourself..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Language</label>
+          <select>
+            <option>English</option>
+            <option>Vietnamese</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="image-section">
+        <h3>Image Preview</h3>
+        <div class="image-preview">
+          <img id="previewImg" src="homepageimg/man.webp" alt="Preview">
+        </div>
+
+        <div class="upload-section">
+          <input type="file" id="uploadInput" accept="image/*">
+        </div>
+
+        <button class="save-btn">Save Image</button>
+      </section>
+
+      <section class="links-section">
+        <h3>Links</h3>
+        <div class="form-group">
+          <label>Website</label>
+          <input type="url" placeholder="https://example.com">
+        </div>
+        <div class="form-group">
+          <label>X (formerly Twitter)</label>
+          <input type="text" placeholder="@username">
+        </div>
+      </section>
+
+      <div class="actions">
+        <button class="update-btn">Update Account</button>
+        <button class="delete-btn">Delete Account</button>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-column footer-left">
+                    <div class="logo-wrap">
+                        <img src="homepageimg/Bywaywhite-logo.png" alt="logo">
+                    </div>
+                    <p class="footer-desc">Empowering learners through accessible and engaging online education.
+                        Byway is a leading online learning platform dedicated to providing high-quality, flexible, and
+                        affordable educational experiences.</p>
+                </div>
+
+                <div class="footer-column footer-center">
+                    <h4 class="footer-heading">Get Help</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Latest Articles</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+
+                    <h4 class="footer-heading">Programs</h4>
+                    <ul>
+                        <li><a href="#">Art & Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">IT & Software</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Programming</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-right">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p class="contact-line">Address: 123 Main Street, Anytown, CA 12345</p>
+                    <p class="contact-line">Tel: +(123) 456-7890</p>
+                    <p class="contact-line">Mail: bywayedu@webkul.in</p>
+
+                    <div class="socials">
+                        <a href="#"><img src="./logo-img.png" alt="logo"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+  <script src="profile.js" defer></script>
+</body>
+
+</html>

@@ -1,8 +1,7 @@
 
 const courses = [
-  { name: "Byway", url: "../Homepage/homepage.html" },
-  { name: "Ronald Richards", url: "../shopping/shopping.html" },
-  { name: "Customer Inquiry", url: "../customer/customer.html" },
+  { name: "Byway", url: "../shopping/index.html" },
+  { name: "Ronald Richards", url: "../shopping/index.html" },
   { name: "React Fundamentals", url: "react.html" },
   { name: "Python Data Analysis", url: "python.html" },
   { name: "UI/UX Design Principles", url: "design.html" },
