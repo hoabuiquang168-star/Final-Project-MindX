@@ -89,7 +89,6 @@
 }
 
 
-/* Footer detailed styles */
 .footer {
     width: 100%;
     color: #d1d5db; 
@@ -160,7 +159,7 @@
 
 
 
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
     .footer-inner {
         grid-template-columns: 1fr;

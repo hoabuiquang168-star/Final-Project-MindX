@@ -46,11 +46,11 @@ function handleSelect(course) {
   searchInput.value = course.name;
   dropdown.style.display = "none";
 
-  // redirect to specific course page
+
   window.location.href = course.url;
 }
 
-// Optional: hide dropdown if you click outside
+
 document.addEventListener("click", e => {
   if (!document.querySelector(".search-container").contains(e.target)) {
     dropdown.style.display = "none";

@@ -118,7 +118,7 @@ h1 {
   gap: 40px;
 }
 
-/* Sidebar */
+
 .filter-sidebar {
   width: 240px;
   flex-shrink: 0;
@@ -158,7 +158,7 @@ h1 {
   margin: 4px 0;
 }
 
-/* Main content */
+
 .course-main {
   flex: 1;
 }
@@ -179,7 +179,7 @@ h1 {
   font-size: 14px;
 }
 
-/* Course grid */
+
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -234,7 +234,7 @@ h1 {
   color: #111;
 }
 
-/* Pagination */
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -256,7 +256,7 @@ h1 {
   border-color: #111827;
 }
 
-/* Responsive */
+
 @media (max-width: 1000px) {
   .content-wrapper {
     flex-direction: column;
