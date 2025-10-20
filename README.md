@@ -2,8 +2,8 @@
 Login / STU-SCH02 HOA
 Register / STU-SCH01 HOA
 Forgot Password / Done HOA
-Searchbar / Done HUNG
-Buying / CTM-ORD01 HOAA 
+Searchbar / Done HOA
+Buying / CTM-ORD01 HOA 
 Teacher/Course details / Done HUNG
 Customer Inquiry / CTM-SPT01 HUNG
 Update account / EMP-PRF01 HUNG
@@ -23,3 +23,18 @@ CUSTOM SHOPPING PAGE (DONE)
 
 Change homepage to index
 Fix searchbar CSS
+
+Fix searchbar image (DONE)
+
+Delete acc
+Update acc finish
+
+Deploy (err)
+Deploy 1st copy
+
+Deploy Final
+README
+homepage CSS triangle
+
+Deploy Final Final
+JSON if can
