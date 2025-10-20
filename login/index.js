@@ -18,7 +18,7 @@ form.addEventListener("submit", function (event) {
   }
 
 
-  if (username === "admin" && password === "1234") {
+  if (username === "hoa1710" && password === "1234") {
     alert("Đăng nhập thành công!");
     
     

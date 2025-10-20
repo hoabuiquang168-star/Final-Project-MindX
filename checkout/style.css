@@ -225,7 +225,7 @@ button {
 
 
 
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
   .footer-inner {
     grid-template-columns: 1fr;
