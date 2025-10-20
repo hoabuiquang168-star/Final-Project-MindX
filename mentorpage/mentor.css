@@ -35,6 +35,7 @@ h5 {
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
 .menu {
@@ -421,6 +422,10 @@ ul {
     align-items: center;
 }
 
+.checkout {
+  text-decoration: none;
+  background-color: rgb(5, 105, 213);
+}
 
 /* 
 @media (max-width: 768px) {
