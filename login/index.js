@@ -23,7 +23,7 @@ form.addEventListener("submit", function (event) {
     
     
     setTimeout(() => {
-      window.location.href = "../Homepage/homepage.html";
+      window.location.href = "../Homepage/index.html";
     }, 1000);
     
   } else {

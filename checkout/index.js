@@ -36,5 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         alert(result);
+        window.location.href = "../Oder-complete/index.html";
     });
 });
