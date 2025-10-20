@@ -18,13 +18,13 @@ document.querySelector('.Create-button').addEventListener('click', function (e) 
         return;
     }
 
-    // Lưu tạm thông tin vào LocalStorage (chỉ để học, không bảo mật)
+   
     const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
     existingUsers.push({ firstname, lastname, username, email, password });
     localStorage.setItem('users', JSON.stringify(existingUsers));
 
     alert('Đăng ký thành công!');
 
-    // 👉 Chuyển hướng sang trang login.html
+    
     window.location.href = "../login/index.html";
 });
